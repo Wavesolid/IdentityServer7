@@ -1,0 +1,46 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+      <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+      <Description>EntityFramework persistence layer for IdProoServer</Description>
+      <Title>OAuth2, OAuth, 2.0, OpenID, Connect, Security, Identity, IdentityServer</Title>
+      <PackageProjectUrl>https://github.com/lxy-l/IdProoServer/tree/main/src/IdProoServer.EntityFramework</PackageProjectUrl>
+      <PackageId>IdProoServer.EntityFrameworkCore</PackageId>
+      <GenerateDocumentationFile>True</GenerateDocumentationFile>
+      <Authors>StewartRoy</Authors>
+      <Copyright>lxy-l</Copyright>
+      <IncludeSymbols>True</IncludeSymbols>
+      <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+      <VersionPrefix>2.0.4</VersionPrefix>
+      <PackageReadmeFile>README.md</PackageReadmeFile>
+      <RepositoryUrl>https://github.com/lxy-l/IdProoServer/tree/main/src/IdProoServer.EntityFramework</RepositoryUrl>
+      <RepositoryType>git</RepositoryType>
+      <PackageTags>IdProoServer.EntityFramework</PackageTags>
+      <PackageReleaseNotes>IdProoServer.EntityFramework</PackageReleaseNotes>
+      <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IdProoServer.EntityFramework.Storage\IdProoServer.EntityFramework.Storage.csproj" />
+    <ProjectReference Include="..\IdProoServer\IdProoServer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

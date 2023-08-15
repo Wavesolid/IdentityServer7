@@ -8,7 +8,7 @@
 2. 去除部分Nuget包例如MinVer，XUnit，Newtonsoft.Json等
 3. 使用System.Text.Json包代替原来Newtonsoft.Json包
 4. 更新项目基础版本为.NET7.0
-5. 重新命名项目为IdentityServer7
+5. 重新命名项目为IdProoServer
 6. 升级相关依赖包
 7. 重写ClaimConverter类
 8. 重写TokenExtensions中的CreateJwtPayload方法
@@ -16,7 +16,7 @@
 10. 弃用已过时的方法
 
 ## Acknowledgements
-IdentityServer7 is built using the following great open source projects and free services:
+IdProoServer is built using the following great open source projects and free services:
 
 * [ASP.NET Core](https://github.com/dotnet/aspnetcore)
 * [Bullseye](https://github.com/adamralph/bullseye)

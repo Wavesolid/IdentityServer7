@@ -1,0 +1,51 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+      <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+      <Description>EntityFramework persistence layer for IdProoServer</Description>
+      <Title>OAuth2, OAuth, 2.0, OpenID, Connect, Security, Identity, IdentityServer</Title>
+      <PackageProjectUrl>https://github.com/lxy-l/IdProoServer/tree/main/src/IdProoServer.EntityFramework.Storage</PackageProjectUrl>
+      <PackageId>IdProoServer.EntityFramework.DataStorage</PackageId>
+      <GenerateDocumentationFile>True</GenerateDocumentationFile>
+      <Authors>StewartRoy</Authors>
+      <Copyright>lxy-l</Copyright>
+      <IncludeSymbols>True</IncludeSymbols>
+      <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+      <VersionPrefix>2.0.5</VersionPrefix>
+      <PackageReadmeFile>README.md</PackageReadmeFile>
+      <RepositoryUrl>https://github.com/lxy-l/IdProoServer/tree/main/src/IdProoServer.EntityFramework.Storage</RepositoryUrl>
+      <RepositoryType>git</RepositoryType>
+      <PackageTags>IdProoServer</PackageTags>
+      <PackageReleaseNotes>IdProoServer.EntityFramework.Storage</PackageReleaseNotes>
+      <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Microsoft.EntityFrameworkCore" />
+    <None Remove="AutoMapper" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="7.0.5" />
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IdProoServer.Storage\IdProoServer.Storage.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+</Project>

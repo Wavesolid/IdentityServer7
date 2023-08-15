@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+      <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
+      <Description>ASP.NET Core Identity Integration for IdProoServer</Description>
+      <Title>OAuth2, OAuth, 2.0, OpenID, Connect, Security, Identity, IdentityServer</Title>
+      <PackageProjectUrl>https://github.com/lxy-l/IdProoServer/tree/main/src/IdProoServer.AspNetIdentity</PackageProjectUrl>
+      <PackageId>IdProoServer.AspNet</PackageId>
+      <GenerateDocumentationFile>True</GenerateDocumentationFile>
+      <Authors>StewartRoy</Authors>
+      <Copyright>lxy-l</Copyright>
+      <IncludeSymbols>True</IncludeSymbols>
+      <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+      <VersionPrefix>2.0.4</VersionPrefix>
+      <PackageReadmeFile>README.md</PackageReadmeFile>
+      <RepositoryUrl>https://github.com/lxy-l/IdProoServer/tree/main/src/IdProoServer.AspNetIdentity</RepositoryUrl>
+      <RepositoryType>git</RepositoryType>
+      <PackageTags>IdProoServer.AspNetIdentity</PackageTags>
+      <PackageReleaseNotes>IdProoServer.AspNetIdentity</PackageReleaseNotes>
+      <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IdProoServer\IdProoServer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

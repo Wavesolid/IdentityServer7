@@ -19,8 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\IdentityServer7.AspNetIdentity\IdentityServer7.AspNetIdentity.csproj" />
-    <ProjectReference Include="..\..\src\IdentityServer7.EntityFramework\IdentityServer7.EntityFramework.csproj" />
+    <ProjectReference Include="..\..\src\IdProoServer.AspNetIdentity\IdProoServer.AspNetIdentity.csproj" />
+    <ProjectReference Include="..\..\src\IdProoServer.EntityFramework\IdProoServer.EntityFramework.csproj" />
   </ItemGroup>
 
 </Project>
